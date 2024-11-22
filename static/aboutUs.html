@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/aboutUs.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="https://mod.gov.ua/">
+                    <img src="../img/logo.png" alt="Logo">
+                    <p>Департамент<br> міжнародного оборонного співробітництва</p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Головна</a></li>
+                    <li><a href="./aboutUs.html">Про нас</a></li>
+                    <li><a href="./news.html">Новини</a></li>
+                    <li><a href="./services.html">Послуги</a></li>
+                    <li><a href="./contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="about-us">
+                <div class="about-us-intro">
+                    <h1>Про нас</h1>
+                    <p>Департамент міжнародного оборонного співробітництва Міністерства оборони України координує
+                        діяльність у сфері розвитку міжнародного співробітництва та партнерства в галузі оборони.</p>
+                    <p>Наша місія — сприяти укріпленню обороноздатності України через тісну взаємодію з міжнародними
+                        партнерами та впровадження світових стандартів у діяльність сектору оборони.</p>
+
+                    <h2>Історія</h2>
+                    <p>Департамент було створено з метою забезпечення ефективного співробітництва з країнами-партнерами,
+                        інтеграції України у міжнародні оборонні структури та розробки стратегічних документів.</p>
+
+                    <h2>Наші цінності</h2>
+                    <p>Ми керуємося принципами прозорості, довіри, професіоналізму та прагнемо досягнення спільних цілей
+                        через партнерство.</p>
+                    <div class="scroll-arrow" id="scroll-arrow">
+                        <span>&#x2193;</span>
+                    </div>
+                </div>
+
+                <div class="team-section">
+                    <h2>Наша команда</h2>
+                    <p>Познайомтеся з керівництвом Департаменту, яке забезпечує ефективну реалізацію міжнародних
+                        оборонних ініціатив.</p>
+                    <div class="team-gallery">
+                        <div class="team-member">
+                            <a href="https://mod.gov.ua/persons/oleksandr-shevchenko">
+                                <img src="../img/deputats/head.png" alt="Олександр Шевченко">
+                            </a>
+                            <h3>Шевченко Олександр Іванович</h3>
+                            <span>Директор Департаменту</span>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://mod.gov.ua/persons/maksym-petrenko">
+                                <img src="../img/deputats/chief.png" alt="Максим Петренко">
+                            </a>
+                            <h3>Петренко Максим Васильович</h3>
+                            <span>Перший заступник директора</span>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://mod.gov.ua/persons/andriy-kovalchuk">
+                                <img src="../img/deputats/first-chief.png" alt="Андрій Ковальчук">
+                            </a>
+                            <h3>Ковальчук Андрій Володимирович</h3>
+                            <span>Заступник директора</span>
+                        </div>
+                        <div class="team-member">
+                            <a href="https://mod.gov.ua/persons/serhiy-lysenko">
+                                <img src="../img/deputats/third-chief.png" alt="Сергій Лисенко">
+                            </a>
+                            <h3>Лисенко Сергій Петрович</h3>
+                            <span>Заступник директора</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section">
+                    <h2>Фото та галерея</h2>
+                    <div class="photo-gallery">
+                        <img src="../img/features/image_2024-11-22_11-15-05.png" alt="Зустріч делегацій" class="gallery-img"
+                            onclick="openModal(this)">
+                        <img src="../img/features/image_2024-11-22_11-15-43.png" alt="Підписання угоди" class="gallery-img"
+                            onclick="openModal(this)">
+                        <img src="../img/features/image_2024-11-22_11-16-24.png" alt="Міжнародні навчання" class="gallery-img"
+                            onclick="openModal(this)">
+                        <img src="../img/features/image_2024-11-22_11-16-50.png" alt="Оборонний форум" class="gallery-img"
+                            onclick="openModal(this)">
+                        <img src="../img/features/image_2024-11-22_11-17-27.png" alt="Спільні заходи" class="gallery-img"
+                            onclick="openModal(this)">
+                        <img src="../img/features/image_2024-11-22_11-18-10.png" alt="Візит делегації" class="gallery-img"
+                            onclick="openModal(this)">
+                    </div>
+                    <div id="photoModal" class="modal">
+                        <span class="close-btn" onclick="closeModal()">&times;</span>
+                        <div class="modal-content-container">
+                            <img class="modal-content" id="modalImage">
+                        </div>
+                        <button class="prev-btn" onclick="changeImage(-1)">&#10094;</button>
+                        <button class="next-btn" onclick="changeImage(1)">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="about-us-stats-section">
+                    <h2>Наші досягнення</h2>
+                    <p>Основні показники нашої діяльності у сфері міжнародного оборонного співробітництва:</p>
+                    <div class="about-us-stats">
+                        <canvas id="achievementBarChart" width="200" height="200"></canvas>
+                        <canvas id="achievementCircle" width="200" height="200"></canvas>
+                        <canvas id="achievementRadar" width="200" height="200"></canvas>
+                    </div>
+                </div>
+
+                <div class="counter-section">
+                    <h2>Наші досягнення у цифрах</h2>
+                    <div class="counter-container">
+                        <div>
+                            <div class="counter" data-target="300">0</div>
+                            <div class="counter-description">Партнерських угод</div>
+                        </div>
+                        <div>
+                            <div class="counter" data-target="100">0</div>
+                            <div class="counter-description">Організованих навчань</div>
+                        </div>
+                        <div>
+                            <div class="counter" data-target="50">0</div>
+                            <div class="counter-description">Оборонних ініціатив</div>
+                        </div>
+                        <div>
+                            <div class="counter" data-target="200">0</div>
+                            <div class="counter-description">Візитів делегацій</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ambitions">
+                    <h2>Наші пріоритети та ініціативи</h2>
+                    <ul id="ambitions-list">
+                        <!-- Dynamic list of priorities -->
+                    </ul>
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Департамент міжнародного оборонного співробітництва МО України</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/aboutUsScript.js"></script>
+
+</body>
+
+</html>
